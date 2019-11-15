@@ -1,4 +1,5 @@
-<!-- Sim -->
+<!-- @Author Margherita Genovese-->
+
 <?php
 	session_start();
 ?>
@@ -22,21 +23,21 @@
 <!-- navigation -->
 <nav class="navbar navbar-expand-md navbar-dark bg-success sticky-top">
 	<div class="container-fluid">
-	<a class="navbar-brand" href="../index.html"><img src="../img/logo.png"></a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarResponsive">
-		<ul class="navbar-nav ml-auto">
-			<li class="nav-item">
-			<a class="nav-link" href="#">Accedi</a>
-			</li>
-			<li class="nav-item">
-			<a class="nav-link" href="RegistrazioneBoundary.php">Registrati</a>
-			</li>
-		</ul>
+	     <a class="navbar-brand" href="../index.html"><img src="../img/logo.png"></a>
+	     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+	    	<span class="navbar-toggler-icon"></span>
+	     </button>
+	  <div class="collapse navbar-collapse" id="navbarResponsive">
+	      	<ul class="navbar-nav ml-auto">
+			    <li class="nav-item">
+			         <a class="nav-link" href="#">Accedi</a>
+			    </li>
+			    <li class="nav-item">
+			         <a class="nav-link" href="RegistrazioneBoundary.php">Registrati</a>
+		     	</li>
+		    </ul>
 	</div>
-	</div>
+  </div>
 </nav>
 
 <?php

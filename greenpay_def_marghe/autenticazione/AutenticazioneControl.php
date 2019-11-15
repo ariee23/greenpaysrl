@@ -12,6 +12,9 @@ require '../PHPMailer/src/Exception.php';
 require '../PHPMailer/src/PHPMailer.php';
 require '../PHPMailer/src/SMTP.php';
 
+include('../connessioneDatabase.php');
+$conDB=new connessioneDatabase();
+
 session_start();
 
 
@@ -30,10 +33,15 @@ session_start();
 function login(){
 
    //VARIABILI DI CONNESSIONE
-   $host = "localhost";	// nome di host
+  $host = "localhost";
+   $user = "root2";
+   $password = "root2";
+   $db="heroku_1568d01f84b8b80";
+ /*      //VARIABILI DI CONNESSIONE
+   $host = "localhost"; // nome di host
    $user = "bee3b716298b4a";// username dell'utente in connessione
    $password = "bad87d03";// password dell'utente
-   $db="heroku_16f3a281c2f1459";//nome database
+   $db="heroku_16f3a281c2f1459";//nome database*/
    $connessione = new mysqli($host, $user, $password,$db);
 
    $cfdest="";
@@ -131,13 +139,10 @@ function login(){
 
 function registrazione(){
 
-
-
-//VARIABILI DI CONNESSIONE
-   $host = "localhost";	// nome di host
-   $user = "bee3b716298b4a";// username dell'utente in connessione
-   $password = "bad87d03";// password dell'utente
-   $db="heroku_16f3a281c2f1459";//nome database
+  $host = "localhost";
+   $user = "root2";
+   $password = "root2";
+   $db="heroku_1568d01f84b8b80";
 // stringa di connessione al DBMS
 $connessione = new mysqli($host, $user, $password,$db);
 
@@ -276,13 +281,10 @@ try {
 
 function conferma($cf){
 
-
-
-//VARIABILI DI CONNESSIONE
-   $host = "localhost";	// nome di host
-   $user = "bee3b716298b4a";// username dell'utente in connessione
-   $password = "bad87d03";// password dell'utente
-   $db="heroku_16f3a281c2f1459";//nome database
+   $host = "localhost";
+   $user = "root2";
+   $password = "root2";
+   $db="heroku_1568d01f84b8b80";
 // stringa di connessione al DBMS
 $connessione = new mysqli($host, $user, $password,$db);
 

@@ -1,4 +1,4 @@
-<!-- Sim -->
+<!-- @Author Margherita Genovese-->
 <?php
 	session_start();
 ?>
@@ -25,13 +25,9 @@
 			var mm = today.getMonth()+1;
 			var yyyy = today.getFullYear()-16; //bisogna avere almeno 16 anni per registrarsi
 
-			if(dd<10) {
-				dd = '0'+dd
-			}
+			if(dd<10) {dd = '0'+dd}
 
-			if(mm<10) {
-				mm = '0'+mm
-			}
+			if(mm<10) {mm = '0'+mm}
 
 			today = yyyy + '-' + mm + '-' + dd;
 			document.getElementById("nascita").setAttribute("max", today);
