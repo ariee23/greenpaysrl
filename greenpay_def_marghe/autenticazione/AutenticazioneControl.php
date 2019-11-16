@@ -11,6 +11,7 @@ use PHPMailer\PHPMailer\SMTP;
 require '../PHPMailer/src/Exception.php';
 require '../PHPMailer/src/PHPMailer.php';
 require '../PHPMailer/src/SMTP.php';
+require '../vendor/autoload.php';
 
 include('../connessioneDatabase.php');
 $conDB=new connessioneDatabase();
@@ -33,10 +34,10 @@ session_start();
 function login(){
 
    //VARIABILI DI CONNESSIONE
-  $host = "localhost";
-   $user = "root2";
-   $password = "root2";
-   $db="heroku_1568d01f84b8b80";
+   $host = "ec2-79-125-2-142.eu-west-1.compute.amazonaws.com";	// nome di host
+   $user = "ouzoogmfmzhscv";// username dell'utente in connessione
+   $password = "52ef1b6e0ed95feff3265e3e873dc9325bb41035a55424c72a085511039fb23c";// password dell'utente
+   $db="d645a30ui80vn";//nome database
  /*      //VARIABILI DI CONNESSIONE
    $host = "localhost"; // nome di host
    $user = "bee3b716298b4a";// username dell'utente in connessione
@@ -138,11 +139,10 @@ function login(){
 
 
 function registrazione(){
-
-  $host = "localhost";
-   $user = "root2";
-   $password = "root2";
-   $db="heroku_1568d01f84b8b80";
+  $host = "ec2-79-125-2-142.eu-west-1.compute.amazonaws.com";	// nome di host
+   $user = "ouzoogmfmzhscv";// username dell'utente in connessione
+   $password = "52ef1b6e0ed95feff3265e3e873dc9325bb41035a55424c72a085511039fb23c";// password dell'utente
+   $db="d645a30ui80vn";//nome database
 // stringa di connessione al DBMS
 $connessione = new mysqli($host, $user, $password,$db);
 
@@ -280,11 +280,10 @@ try {
      */
 
 function conferma($cf){
-
-   $host = "localhost";
-   $user = "root2";
-   $password = "root2";
-   $db="heroku_1568d01f84b8b80";
+  $host = "ec2-79-125-2-142.eu-west-1.compute.amazonaws.com";	// nome di host
+   $user = "ouzoogmfmzhscv";// username dell'utente in connessione
+   $password = "52ef1b6e0ed95feff3265e3e873dc9325bb41035a55424c72a085511039fb23c";// password dell'utente
+   $db="d645a30ui80vn";//nome database
 // stringa di connessione al DBMS
 $connessione = new mysqli($host, $user, $password,$db);
 
