@@ -18,9 +18,13 @@
 	<script src="https://kit.fontawesome.com/3d31361b31.js"></script>
 	<script src="../valida.js"></script>
 </head>
-<body>
-
-<!-- navigation -->
+<body     >
+CIAOOO
+	CIAO
+	CIAO
+	CIAO
+	CIAO
+<!-- navigation 
 <nav class="navbar navbar-expand-md navbar-dark bg-success sticky-top">
 	<div class="container-fluid">
 	     <a class="navbar-brand" href="../index.html"><img src="../img/logo.png"></a>
@@ -39,7 +43,7 @@
 	</div>
   </div>
 </nav>
-
+-->
 <?php
 			if(@$_GET['success']==true){
 			?>
@@ -85,7 +89,7 @@
 		?>
 
 
-<!-- form -->
+<!-- form
 <div class="container-fluid padding">
 	<div class="row justify-content-center">
 		<div class="col-lg-6 my-col5">
@@ -107,8 +111,8 @@
 		</div>
 		</div>
 </div>
-
-<!-- footer -->
+ -->
+<!-- footer 
 <footer>
 	<hr>
 	<div class="row">
@@ -134,6 +138,9 @@
 		</div>
 	</div>
 </footer>
-
+-->
+	
+	
+	
 </body>
 </html>
